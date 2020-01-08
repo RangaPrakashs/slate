@@ -211,7 +211,7 @@
     </script>
   </head>
 
-  <body class="index" data-languages="[&quot;JavaScript&quot;]">
+  <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -222,9 +222,6 @@
       <div class="logo">
         <img src="images/logo.png" alt="Logo" />
       </div>
-        <div class="lang-selector">
-              <a href="#" data-language-name="JavaScript">JavaScript</a>
-        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
@@ -303,13 +300,13 @@
               </ul>
           </li>
           <li>
-            <a href="#in-stock-alerts" class="toc-h1 toc-link" data-title="In-stock alerts">In-stock alerts</a>
+            <a href="#back-in-stock-product-alerts" class="toc-h1 toc-link" data-title="Back In Stock Product Alerts">Back In Stock Product Alerts</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#show-quot-email-me-when-available-quot-widget-addtowatchlist" class="toc-h2 toc-link" data-title="Show "Email me when available" widget  - addToWatchList">Show "Email me when available" widget <span class="hidden"> - addToWatchList</span></a>
                   </li>
                   <li>
-                    <a href="#request-in-stock-alert-for-a-product-sendwatchlist" class="toc-h2 toc-link" data-title="Request in-stock alert for a product  - sendWatchlist">Request in-stock alert for a product <span class="hidden"> - sendWatchlist</span></a>
+                    <a href="#request-back-in-stock-product-alerts-for-a-product-sendwatchlist" class="toc-h2 toc-link" data-title="Request Back In Stock Product Alerts for a product  - sendWatchlist">Request Back In Stock Product Alerts for a product <span class="hidden"> - sendWatchlist</span></a>
                   </li>
               </ul>
           </li>
@@ -383,6 +380,26 @@
                   </li>
                   <li>
                     <a href="#track-drop-from-cart-event-dropfromcart" class="toc-h2 toc-link" data-title="Track drop from cart event  - dropFromCart">Track drop from cart event <span class="hidden"> - dropFromCart</span></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#rest-apis-premium" class="toc-h1 toc-link" data-title="REST APIs (Premium)">REST APIs (Premium)</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#introduction" class="toc-h2 toc-link" data-title="Introduction">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="#authentication" class="toc-h2 toc-link" data-title="Authentication">Authentication</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-wishlist-products-for-a-user" class="toc-h2 toc-link" data-title="Fetch wishlist products for a user">Fetch wishlist products for a user</a>
+                  </li>
+                  <li>
+                    <a href="#add-products-to-user-39-s-wishlist" class="toc-h2 toc-link" data-title="Add products to user's wishlist">Add products to user's wishlist</a>
+                  </li>
+                  <li>
+                    <a href="#subscribe-to-back-in-stock-product-alerts-on-a-product" class="toc-h2 toc-link" data-title="Subscribe to Back In Stock Product Alerts on a product">Subscribe to Back In Stock Product Alerts on a product</a>
                   </li>
               </ul>
           </li>
@@ -1153,7 +1170,7 @@ When you are using the Swym Shopify app, the reference to swym.js is already ini
 <td>The product URL</td>
 </tr>
 </tbody></table>
-<h1 id='in-stock-alerts'>In-stock alerts</h1><h2 id='show-quot-email-me-when-available-quot-widget-addtowatchlist'>Show &quot;Email me when available&quot; widget <span class="hidden"> - addToWatchList</span></h2><h3 id='_swat-addtowatchlist-clickevent-eventmap-callbackfn-renderintonodeopt'>_swat.addToWatchList(clickEvent, eventMap, callbackFn, renderIntoNode<sub class="subscript">opt</sub>)</h3>
+<h1 id='back-in-stock-product-alerts'>Back In Stock Product Alerts</h1><h2 id='show-quot-email-me-when-available-quot-widget-addtowatchlist'>Show &quot;Email me when available&quot; widget <span class="hidden"> - addToWatchList</span></h2><h3 id='_swat-addtowatchlist-clickevent-eventmap-callbackfn-renderintonodeopt'>_swat.addToWatchList(clickEvent, eventMap, callbackFn, renderIntoNode<sub class="subscript">opt</sub>)</h3>
 <p>When a product is out of stock and you want to show &quot;Email me when available&quot; subscription button, we can use this API to add a product to user&#39;s &quot;watchlist&quot;. Whenever product is back in stock, an email will be sent to user automatically if <code>addToWatchlist</code> was performed for that product for user.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nb">window</span><span class="p">.</span><span class="nx">_swat</span><span class="p">.</span><span class="nx">addToWatchList</span><span class="p">(</span>
   <span class="nx">clickEventObj</span><span class="p">,</span>
@@ -1192,7 +1209,7 @@ When you are using the Swym Shopify app, the reference to swym.js is already ini
 <td>A DOM node where you want to show addToWatchlist as popup/inline form</td>
 </tr>
 </tbody></table>
-<h2 id='request-in-stock-alert-for-a-product-sendwatchlist'>Request in-stock alert for a product <span class="hidden"> - sendWatchlist</span></h2><h3 id='_swat-sendwatchlist-mediumvalue-sendmedium-eventobject-callbackfn-errorfn-addtomailinglistopt'>_swat.sendWatchlist(mediumValue, sendMedium, eventObject, callbackFn, errorFn, addToMailingList<sub class="subscript">opt</sub>)</h3>
+<h2 id='request-back-in-stock-product-alerts-for-a-product-sendwatchlist'>Request Back In Stock Product Alerts for a product <span class="hidden"> - sendWatchlist</span></h2><h3 id='_swat-sendwatchlist-mediumvalue-sendmedium-eventobject-callbackfn-errorfn-addtomailinglistopt'>_swat.sendWatchlist(mediumValue, sendMedium, eventObject, callbackFn, errorFn, addToMailingList<sub class="subscript">opt</sub>)</h3>
 <p>Sends an back-in-stock alert request to the Swym platform.</p>
 <pre class="highlight javascript tab-javascript"><code><span class="nb">window</span><span class="p">.</span><span class="nx">_swat</span><span class="p">.</span><span class="nx">sendWatchlist</span><span class="p">(</span>
   <span class="s2">"demo@demo.com"</span><span class="p">,</span>
@@ -1204,7 +1221,8 @@ When you are using the Swym Shopify app, the reference to swym.js is already ini
     <span class="na">pr</span><span class="p">:</span> <span class="mi">23</span>
   <span class="p">},</span>
   <span class="kd">function</span><span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="p">},</span>
-  <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">}</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">},</span>
+  <span class="mi">1</span>
 <span class="p">);</span>
 </code></pre>
 <table><thead>
@@ -1241,8 +1259,8 @@ When you are using the Swym Shopify app, the reference to swym.js is already ini
 </tr>
 <tr>
 <td>addToMailingList<span>optional</span></td>
-<td>boolean</td>
-<td>Boolean to tell if user opted in or out from the mailing list (Note:- requires mailing list feature to be set up from Swym&#39;s end)</td>
+<td>int</td>
+<td>Possible values: 1(opted in) or 0(opted out), to tell if user will be added to the mailing list (Note:- requires mailing list feature to be set up from Swym&#39;s end)</td>
 </tr>
 </tbody></table>
 <h1 id='collections-of-wishlist-premium'>Collections of Wishlist (Premium)</h1>
@@ -1490,6 +1508,10 @@ This should be followed by a call to addToWishlist. To retrieve the collection f
 </tbody></table>
 <h1 id='social-sharing-of-wishlist-premium'>Social sharing of Wishlist (Premium)</h1><h2 id='share-wishlist-on-social-media-sharewishlistsocial'>Share wishlist on social media <span class="hidden"> - shareWishlistSocial</span></h2><h3 id='_swat-sharewishlistsocial-hashtag-shareurltemplate-platform-note-errcallback'>_swat.shareWishlistSocial(hashtag, shareUrlTemplate, platform, note, errCallBack)</h3>
 <p>This API creates the unique URL for a particular sharing platform and opens a new dialog in that platform to perform the sharing step. For eg., for facebook, the share page will be opened in a new window.</p>
+
+<aside class="success">
+Please note that this API needs an authenticated user. i.e. you need to login into the site or login via 'connect' from wishlist modal.
+</aside>
 <pre class="highlight javascript tab-javascript"><code><span class="nb">window</span><span class="p">.</span><span class="nx">_swat</span><span class="p">.</span><span class="nx">shareWishlistSocial</span><span class="p">(</span>
   <span class="kc">null</span><span class="p">,</span>
   <span class="s2">"https://www.facebook.com/sharer.php?u={{shareurl}}&amp;t={{note}}"</span><span class="p">,</span>
@@ -1513,7 +1535,7 @@ This should be followed by a call to addToWishlist. To retrieve the collection f
 <tr>
 <td>platformShareUrlTemplate</td>
 <td>string</td>
-<td>The social platform-specific share URL with Mustache tags. More info here and here. Out of the box, platforms supported are &quot;facebook&quot;, &quot;twitter&quot;, &quot;googleplus&quot;. To get share urls for these, use the variable - _swat.retailerSettings.Wishlist.SharingModes. This has the default icon url, share url and key for each of these platforms. Again, new platforms can be added here and/or default icons can be changed for you if you need it.</td>
+<td>The social platform-specific share URL with Mustache tags. Out of the box, platforms supported are &quot;facebook&quot;, &quot;twitter&quot;, &quot;googleplus&quot;. To get share urls for these, use the variable - <code>_swat.retailerSettings.Wishlist.SharingModes</code>. This has the default icon url, share url and key for each of these platforms. Again, new platforms can be added here and/or default icons can be changed for you if you need it.</td>
 </tr>
 <tr>
 <td>platform</td>
@@ -1533,6 +1555,10 @@ This should be followed by a call to addToWishlist. To retrieve the collection f
 </tbody></table>
 <h2 id='generate-shareable-wishlist-url-generatesharedwishlisturl'>Generate shareable wishlist URL <span class="hidden"> - generateSharedWishlistURL</span></h2><h3 id='_swat-generatesharedwishlisturl-hashtag-callbackfn-errcallback'>_swat.generateSharedWishlistURL(hashtag, callbackFn, errCallBack)</h3>
 <p>A lower level API that returns the unique wishlist URL that can be shared anywhere. This URL will return the user who clicks on it back to the site into the default share wishlist page. This page can be overridden from the retailer settings if need be.</p>
+
+<aside class="success">
+Please note that this API needs an authenticated user. i.e. you need to login into the site or login via 'connect' from wishlist modal.
+</aside>
 <pre class="highlight javascript tab-javascript"><code><span class="nb">window</span><span class="p">.</span><span class="nx">_swat</span><span class="p">.</span><span class="nx">generateSharedWishlistURL</span><span class="p">(</span>
   <span class="kc">null</span><span class="p">,</span>
   <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span> <span class="p">},</span>     <span class="c1">// returns the generated url</span>
@@ -1549,12 +1575,12 @@ This should be followed by a call to addToWishlist. To retrieve the collection f
 <tr>
 <td>hashtag</td>
 <td>string</td>
-<td>If collections of Wishlist is not enabled, hashtag has to be set as null.</td>
+<td>If collections of Wishlist is not enabled, hashtag has to be set as <code>null</code>.</td>
 </tr>
 <tr>
 <td>successFn</td>
 <td>function</td>
-<td>Function that gets called if the URL is generated successfully. The generated url is sent as argument to this function</td>
+<td>Function that gets called if the URL is generated successfully. The generated url is sent as argument to this function.</td>
 </tr>
 <tr>
 <td>errorFn</td>
@@ -1643,17 +1669,22 @@ As part of the Swym Shopify app install, provider based logins are picked automa
 <tr>
 <td>epi</td>
 <td>int/string</td>
-<td>external product unique id (variant level if available)</td>
+<td>product variant id (variant level if available)</td>
 </tr>
 <tr>
 <td>empi</td>
 <td>int/string</td>
-<td>external product master id (if there is a group product id with different variant ids)</td>
+<td>product master id (if there is a group product id with different variant ids)</td>
 </tr>
 <tr>
 <td>qty</td>
 <td>int</td>
 <td>quantity</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>string</td>
+<td>product title</td>
 </tr>
 <tr>
 <td>stk</td>
@@ -1893,12 +1924,166 @@ Shopify’s product handle only returns handle, if you are using liquid, try usi
 <td>A callback function, which takes a single argument (JSON response from the swym service)</td>
 </tr>
 </tbody></table>
+<h1 id='rest-apis-premium'>REST APIs (Premium)</h1><h2 id='introduction'>Introduction</h2>
+<p>In addition to our JavaScript SDK, Swym APIs are also available as REST endpoints. Developers can use these endpoints to integrate functionalities of the Swym platform in mobile apps, embedded devices, third-party software etc.</p>
+<h2 id='authentication'>Authentication</h2>
+<p>Swym REST APIs follow <a href="https://swagger.io/docs/specification/authentication/basic-authentication/">Basic Authentication</a>. In the Authorization header of your request, you will need username and API key. Use your &quot;provider id&quot; as username. You can find your &quot;provider id&quot; by typing <code>_swat.pid</code> in the developer console after opening your site.</p>
+
+<p>For the API key, please contact our support team by <a href="https://swym.freshdesk.com/support/tickets/new" target="_blank">raising a ticket</a>. Since REST APIs are a Premium plan and above feature only, we provision API keys on a case by case basis. Also, the API endpoint is determined by the tier on which your store is provisioned on the Swym platform. Our support team will be able to provide you with the correct endpoint using your store details.</p>
+<h2 id='fetch-wishlist-products-for-a-user'>Fetch wishlist products for a user</h2><pre class="highlight plaintext"><code>curl -X GET \
+  'https://YOUR_SWYM_ENDPOINT/storeadmin/user/wishlist?useremail=demouser@demo.com' \
+  -H 'Authorization: Basic BASE64-ENCODING-OF-"username:password"' \
+  -H 'Content-Type: application/x-www-form-urlencoded'
+
+</code></pre><pre class="highlight plaintext"><code>Example response:
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"inactive"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"vendor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pure Fix Cycles"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"vval1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"50 cm"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"iqty"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"_hv"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Oi+ZI8dGO/d6bPkDuNzX61IGrc/PQPBOq9HmMfjy9iI="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"empi"</span><span class="p">:</span><span class="w"> </span><span class="mi">1483962056779</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alfa"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"prodtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fixed Gear Bicycle"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sku"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Alfa - Small"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"du"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://engagedemo.myshopify.com/products/the-alfa"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"pid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Muz0BmP2s4Nu+YhQLYhKKRqe11LtYYeC/2Ju3Z0yYqk="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"epi"</span><span class="p">:</span><span class="w"> </span><span class="mi">13585114988619</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a4c07b32-cc59-4abd-807b-32cc598abd87"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"iu"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://cdn.shopify.com/s/files/1/2241/2845/products/ALFA_SIDE_WEB.jpg?v=1542443636"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://engagedemo.myshopify.com/products/the-alfa?variant=13585114988619"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"pr"</span><span class="p">:</span><span class="w"> </span><span class="mf">1981.77</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"vkey1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Size"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"epis"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"epi"</span><span class="p">:</span><span class="w"> </span><span class="mi">13585114988619</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ts"</span><span class="p">:</span><span class="w"> </span><span class="mi">1561451272218</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8c09ffe4-1262-4b6d-b203-98bd0ac593af.1561451272218"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-06-25"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"dcat"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mac"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"dcat1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Personal computer"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"di"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8c09ffe4-1262-4b6d-b203-98bd0ac593af"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"et"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><pre class="highlight plaintext"><code>Example call with "cached-products" parameter:
+</code></pre><pre class="highlight plaintext"><code>curl -g -X GET \
+  'https://YOUR_SWYM_ENDPOINT/storeadmin/user/wishlist?useremail=demouser@demo.com&amp;cached-products=[{%22epi%22:%2013585114988619,%20%22_hv%22:%20%22Oi%2BZI8dGO%2Fd6bPkDuNzX61IGrc%2FPQPBOq9HmMfjy9iI%3D%22}]' \
+  -H 'Authorization: Basic BASE64-ENCODING-OF-"username:password"' \
+  -H 'Content-Type: application/x-www-form-urlencoded'
+
+</code></pre>
+<p>With this API, you can fetch all the wishlisted products for a shopper given email address.</p>
+
+<p>The response here contains two important keys - <code>metadata</code> and <code>epis</code>. The <code>epis</code> key contains data about the wishlist event (when it happened, device info, etc) while the <code>metadata</code> key contains data about the product for which the event happened. While rendering with this data, loop over the <code>epis</code> key, take the epi (variant id) and merge it with its corresponding object in the <code>metadata</code> key (using the <code>epi</code> key in each object inside <code>metadata</code> key). This will give you a list that has complete data about a wishlist event.</p>
+
+<p>To optimise data sent over the wire, this API also provides a &quot;cached-products&quot; parameter. This parameter determines the client&#39;s product metadata state. If the client already has the latest metadata about a product, it&#39;s not sent again for that product. Whenever metadata about a product is sent by a Swym API, &quot;_hv&quot; key is returned along with it. This key is the &quot;freshness stamp&quot; for a product. While making the next request, if the client sends the &quot;cached-product&quot; parameter with the variant id and the stamp for the product&#39;s metadata that the client has, Swym checks if the stamp represents the most recent state. If it does, Swym API will not return the product metadata again.</p>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>useremail</td>
+<td>string</td>
+<td>The customer&#39;s email address</td>
+</tr>
+<tr>
+<td>cached-products <span>optional</span></td>
+<td>Array[object]</td>
+<td>Array of json objects containing the variant id and hash value of product data available to the client</td>
+</tr>
+</tbody></table>
+<h2 id='add-products-to-user-39-s-wishlist'>Add products to user&#39;s wishlist</h2><pre class="highlight plaintext"><code>curl -X POST \
+  'http://YOUR_SWYM_ENDPOINT/storeadmin/user/add-wishlist?useremail=demouser@demo.com' \
+  -H 'Authorization: Basic BASE64-ENCODING-OF-"username:password"' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d epis=%5B13585100865611%5D
+</code></pre><pre class="highlight plaintext"><code>Example response:
+</code></pre><pre class="highlight plaintext"><code>{"message":"Product(s) added to user collection"}
+</code></pre>
+<p>Using this API, you can add an array of products to a user&#39;s wishlist, given their email address.</p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>useremail</td>
+<td>string</td>
+<td>The customer&#39;s email address</td>
+</tr>
+<tr>
+<td>appId <span>optional</span></td>
+<td>string</td>
+<td>the type of client making this request. Defaults to &quot;StoreadminApi&quot;. Can be &quot;mobileApp&quot; if app is making the request.</td>
+</tr>
+</tbody></table>
+<h3 id='request-body'>Request Body</h3>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>epis</td>
+<td>Array[object]</td>
+<td>Array of variant ids of the products to be added to wishlist.</td>
+</tr>
+</tbody></table>
+<h2 id='subscribe-to-back-in-stock-product-alerts-on-a-product'>Subscribe to Back In Stock Product Alerts on a product</h2>
+<p>Using this API, you can subscribe users to Back In Stock Product Alerts on products when they are currently out of stock. Please note, this only works if your inventory is managed by your e-commerce platform i.e. Shopify, Bigcommerce or Magento. You will also have to ensure on your end that the user is only able to subscribe to alerts on a product that&#39;s out of stock.</p>
+<pre class="highlight plaintext"><code>curl -X POST \
+  'http://YOUR_SWYM_ENDPOINT/storeadmin/user/subscribe-isa?useremail=demouser@demo.com' \
+  -H 'Authorization: Basic BASE64-ENCODING-OF-"username:password"' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d epis=%5B13585100865611%5D
+</code></pre><pre class="highlight plaintext"><code>Example response:
+</code></pre><pre class="highlight plaintext"><code>{"message":"Product(s) added to user collection"}
+</code></pre><h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>useremail</td>
+<td>string</td>
+<td>The customer&#39;s email address</td>
+</tr>
+</tbody></table>
+<h3 id='request-body-2'>Request Body</h3>
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>epis</td>
+<td>Array[object]</td>
+<td>Array of variant ids of the products for which the user needs to be subscribed for alerts.</td>
+</tr>
+</tbody></table>
 
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="JavaScript">JavaScript</a>
-          </div>
       </div>
     </div>
   </body>
